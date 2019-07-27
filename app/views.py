@@ -1,10 +1,10 @@
 from flask import render_template
 from app import app
-from .request import get_sources
+from .request import get_sources,get_articles
 
 # views
 @app.route('/')
-@app.route('/watchdogs')
+@app.route('/watchdogs/')
 def index():
     '''
     View root page function that returns the index page and its data
@@ -30,4 +30,6 @@ def news_source(source_id):
     '''
     View new_source page function that returns a news source page and its data
     '''
-    return render_template('newsSource.html', id=source_id)
+    title=f"{source_id}-page"
+    articles = get_articles(source_id)
+    return render_template('newsSource.html', title=title,articles=articles)
