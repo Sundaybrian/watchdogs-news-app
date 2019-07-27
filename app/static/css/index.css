@@ -1,0 +1,10 @@
+#row-griddy {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 5px;
+}
+
+#row-griddy section.sources > h2 {
+  text-transform: uppercase;
+}
