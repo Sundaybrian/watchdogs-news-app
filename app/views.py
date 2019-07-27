@@ -3,9 +3,18 @@ from app import app
 
 #views
 @app.route('/')
+@app.route('/watchdogs')
 def index():
     '''
     View root page function that returns the index page and its data
     '''
     title = 'WatchDogs News App'
     return render_template('index.html',title=title)
+
+
+@app.route("/watchdogs/<source_id>")
+def news_source(source_id):
+    '''
+    View new_source page function that returns a news source page and its data
+    '''
+    return render_template('newsSource.html',id =source_id)
