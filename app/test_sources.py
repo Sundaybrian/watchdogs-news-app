@@ -13,7 +13,7 @@ class SourcesTest(unittest.TestCase):
         Set up method that will run before every test
         '''
 
-        self.new_source=Sources('123movies','123 Movies','lorem picsum','https://blahblahblah','madtings','patois','jm')
+        self.new_source=Source('123movies','123 Movies','lorem picsum','https://blahblahblah','madtings','patois','jm')
 
 
     def test_instance(self):
