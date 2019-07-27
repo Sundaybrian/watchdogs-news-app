@@ -49,7 +49,7 @@ def process_results(sources_list):
         desc=source_item.get('description')
         url=source_item.get('url')
         category=source_item.get('category')
-        languange=source_item.get('language')
+        language=source_item.get('language')
         country=source_item.get('country')
 
         source_obj=Source(id,name,desc,url,category,language,country)
