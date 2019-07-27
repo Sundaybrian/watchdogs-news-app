@@ -102,8 +102,11 @@ def process_article_results(articles_list):
         publishedAt=article_item.get('publishedAt')
         content=article_item.get('content')
 
-        article_obj=Article(author,title,desc,url,urlToImage,publishedAt,content)
-        articles_results.append(article_obj)
+
+        if urlToImage:
+            
+            article_obj=Article(author,title,desc,url,urlToImage,publishedAt,content)
+            articles_results.append(article_obj)
 
     return articles_results    
 
