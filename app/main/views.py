@@ -1,10 +1,10 @@
-from flask import render_template
-from app import app
-from .request import get_sources,get_articles
+from flask import render_template,redirect,url_for
+from . import main
+from ..request import get_sources,get_articles
+
 
 # views
-@app.route('/')
-@app.route('/watchdogs/')
+@main.route('/')
 def index():
     '''
     View root page function that returns the index page and its data
@@ -25,7 +25,7 @@ def index():
                            science=science_sources, sports=sports_sources, tech=tech_sources)
 
 
-@app.route("/watchdogs/<source_id>")
+@main.route("/watchdogs/<source_id>")
 def news_source(source_id):
     '''
     View new_source page function that returns a news source page and its data
