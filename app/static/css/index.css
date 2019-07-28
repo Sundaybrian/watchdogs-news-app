@@ -1,8 +1,30 @@
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Sriracha&display=swap");
 
 * {
   box-sizing: border-box;
   font-family: "Kaushan Script", cursive;
+}
+
+body {
+  background-color: #121313;
+  font-family: "Sriracha", cursive;
+}
+
+/* ============navigation============ */
+nav.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: #ffff;
+}
+
+nav .navbar-brand:hover {
+  color: #fb3;
+}
+
+/* ============index page============ */
+
+section.sources h2 {
+  font-family: "Kaushan Script", cursive;
+  color: #fb3;
 }
 
 /* helper classes */
