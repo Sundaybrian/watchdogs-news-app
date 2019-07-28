@@ -6,18 +6,34 @@
     </div>
   </div>
 </div>
-<!-- <div class="card">
-  <div class="card-header">
-    <p class="lead">{{ newsSource.desc }}</p>
-  </div>
-  <div class="card-body">
-    <a href="/watchdogs/{{ newsSource.id }}">{{ newsSource.name }}</a>
-  </div>
-</div> -->
+
 {%endfor%} {% endmacro %}
 
-<!-- Articles Macro -->
+<!-- ========================Articles Macro =============================-->
 
+<!-- Major-block-1 macro -->
+{% macro displayMajorArticle(major)%}
+<div class="col-sm-12 mb-3">
+  <div class="row" id="major-block-row">
+    <div class="col-sm-12 col-md-8 major-img">
+      <img
+        src="{{ major.urlToImage }}"
+        alt="{{ major.title }}"
+        class="img-responsive"
+      />
+    </div>
+    <div class="col-sm-12 col-md-4" id="major-content">
+      <h5 class="text-muted">{{ major.author }}</h5>
+      <h2 class="text-title">
+        <a href="{{ major.url }}">{{ major.title }}</a>
+      </h2>
+      <p class="lead">{{ major.content }}</p>
+      <span class="text-muted">{{ major.publishedAt }}</span>
+    </div>
+  </div>
+</div>
+{%endmacro%}
+<!-- end major-block-1 macro -->
 
 {% macro displayNewsArticles(article_list) %} {% for article in article_list %}
 <div class="col-sm-12 mb-3">

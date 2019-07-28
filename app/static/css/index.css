@@ -3,6 +3,34 @@
   margin-bottom: 20px;
 }
 
+.bg-light {
+  background: gray !important;
+}
+
+.text-title {
+  color: #444;
+  font-size: 1.35em;
+  line-height: 1.15;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.text-title:hover {
+  text-decoration: underline;
+  text-decoration-color: #333;
+}
+
+/* major article*/
+
+.major-img img.img-responsive {
+  max-height: 480px !important;
+}
+
+.major-content {
+  padding: 5px;
+  padding-top: 20vh;
+}
+
 #row-griddy {
   width: 90%;
   margin: 0 auto;
