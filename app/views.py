@@ -11,12 +11,12 @@ def index():
     '''
 
     # Getting the news sources
+    sports_sources = get_sources('sports')
     business_sources = get_sources('business')
     entertainment_sources = get_sources('entertainment')
     general_sources = get_sources('general')
     health_sources = get_sources('health')
     science_sources = get_sources('science')
-    sports_sources = get_sources('sports')
     tech_sources = get_sources('technology')
 
     title = 'WatchDogs News App'

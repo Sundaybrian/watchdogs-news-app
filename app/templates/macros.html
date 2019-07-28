@@ -91,7 +91,7 @@
 {% endfor %} {% endmacro%}
 <!-- end latest macro -->
 
-{% macro displayNewsArticles(article_list) %} {% for article in article_list %}
+{% macro displayMoreArticles(more_list) %} {% for article in more_list %}
 <div class="col-sm-12 mb-3">
   <div class="row inside-cols">
     <div class="col-sm-4 img-cols">
@@ -103,14 +103,14 @@
     </div>
     <div class="col-sm-8 article-info">
       <div class="heading">
-        <h5 class="text-muted">{{ article.author }}</h5>
+        <h5 class="text-primary">{{ article.author }}</h5>
         <span class="text-muted">{{ article.publishedAt }}</span>
         <span>     
       </div>
       <h2>{{ article.title }}</h2>
-      <p class="lead">{{ article.description }}</p>
+      <p class="lead">{{ article.content }}</p>
     </div>
- <a href="{{ article.url }}">Read More...</a></span>
+
   </div>
 </div>
 
