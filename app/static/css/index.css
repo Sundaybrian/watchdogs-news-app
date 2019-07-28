@@ -22,13 +22,20 @@
 
 /* major article*/
 
+header.header h2 {
+  font-size: 1.3em;
+  padding-left: 2px;
+  padding-top: 9px;
+  text-transform: capitalize;
+  color:#1e1e1e;
+}
+
 .major-img img.img-responsive {
   max-height: 480px !important;
 }
 
 .major-content {
   padding: 5px;
-  padding-top: 20vh;
 }
 
 #row-griddy {
