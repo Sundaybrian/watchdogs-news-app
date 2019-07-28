@@ -6,7 +6,7 @@
 
 ## Description
 
-[This](https://watchdogs-news-app.herokuapp.com/) is web application that allows users to access news from all over the globe.The app fetches various news sources and sorts them based on categories.The application leverages the power of [News API](https://newsapi.org/).A user can click on a News source and be directed to a page that contains News Articles from the selected News source. The article's title, image, date of publication and preview will be displayed.A user can click on the article to be directed to the source's site to read the entire article.
+[WatchDogs News App](https://watchdogs-news-app.herokuapp.com/) is web application that allows users to access news from all over the globe.The app fetches various news sources and sorts them based on categories.The application leverages the power of the [News API](https://newsapi.org/).A user can click on a News source and be directed to a page that contains **News Articles** from the selected News source. The article's title, image, date of publication and preview will be displayed.A user can click on the article to be directed to the source's site to read the entire article.
 
 ## Behaviour Driven Development
 
