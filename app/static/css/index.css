@@ -26,6 +26,7 @@
 
 .text-title a {
   font-size: 0.7em;
+  font-family: "Kaushan Script", cursive !important;
   font-weight: 200;
   color: #fb3 !important;
 }
@@ -39,6 +40,7 @@
 .lead {
   font-weight: normal !important;
   color: #fff !important;
+  font-family: "Sriracha", cursive !important;
   line-height: 1.2em;
   margin: 0 0 1.25em 0;
   padding: 0 0.2em 0 0;
@@ -87,6 +89,7 @@ section.sources h2 {
 .panel-default > .panel-heading {
   background: rgba(0, 0, 0, 0.8) !important;
   color: #fff !important;
+  font-family: "Sriracha", cursive !important;
   font-size: 1.4rem;
   font-weight: 500;
 }

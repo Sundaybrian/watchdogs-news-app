@@ -4,12 +4,17 @@
 {% block styles%}
 {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" />
-{% endblock styles%}
-
-{% block content %}
+{% endblock styles%} {% block content %}
 
 <div class="container">
   <div id="row-griddy">
+    <section class="sources">
+      <h2 class="text-center">sports</h2>
+      <div class="row">
+        {{ macro.displayNewsSource(sports) }}
+      </div>
+    </section>
+
     <section class="sources">
       <h2 class="text-center">Business</h2>
       <div class="row">
@@ -21,13 +26,6 @@
       <h2 class="text-center">Entertainment</h2>
       <div class="row">
         {{ macro.displayNewsSource(entertainment) }}
-      </div>
-    </section>
-
-    <section class="sources">
-      <h2 class="text-center">sports</h2>
-      <div class="row">
-        {{ macro.displayNewsSource(sports) }}
       </div>
     </section>
 
