@@ -42,17 +42,13 @@ This is a flask web application that allows users to access news from all the gl
 
 ## Setup/Installation
 
-- visit
-- Clone [this repository](https://github.com/Sundaybrian/python-pass-locker)
-- Open a terminal window navigate to the app folder and type `./run.py` to run the application
--
-- Enjoy
+- Requires internet connection
 
 ## Known Bugs
 
-No known bugs
-No Search feature has been implemented
-The NewsAPi shuts down if request exceed 250 in a given day
+- Some news sources may not have data in them.Just navigate back and pick another source
+- No Search feature has been implemented
+- The NewsAPi shuts down if request exceed 250 in a given day
 
 ## Technologies Used
 
