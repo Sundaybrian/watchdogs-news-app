@@ -27,7 +27,7 @@
       <h2 class="text-title">
         <a href="{{ major.url }}">{{ major.title }}</a>
       </h2>
-      <p class="lead">{{ major.content }}</p>
+      <p class="lead">{{ major.content | truncate(200) }}</p>
       <span class="text-muted">last Updated:{{ major.publishedAt }}</span>
     </div>
   </div>
@@ -46,7 +46,7 @@
     />
   </div>
   <div class="major2-content">
-    <h5 class="text-muted">{{ article.author }}</h5>
+    <h5 class="text-primary">{{ article.author }}</h5>
     <h2 class="text-title">
       <a href="{{ article.url }}">{{ article.title }}</a>
     </h2>
@@ -58,8 +58,7 @@
 <!-- end major block 2 macro-->
 
 <!-- latest macro -->
-{% macro displayLatestArticles(latest) %} 
-{% for article in latest%}
+{% macro displayLatestArticles(latest) %} {% for article in latest%}
 <div class="col-sm-12 mb-3">
   <div class="row inside-cols">
     <div class="col-sm-4 img-cols">
@@ -70,15 +69,16 @@
       />
     </div>
     <div class="col-sm-8 article-info">
-      <h5 class="text-muted">{{ article.author }}</h5>
-      <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
-      <p class="lead">{{ article.content | truncate(50)}}</p>
+      <h5 class="text-primary">{{ article.author }}</h5>
+      <h2 class="text-title">
+        <a href="{{ article.url }}">{{ article.title }}</a>
+      </h2>
+      <p class="lead">{{ article.content | truncate(150)}}</p>
       <span class="text-muted">{{ article.publishedAt }}</span>
     </div>
   </div>
 </div>
-{% endfor %} 
-{% endmacro%}
+{% endfor %} {% endmacro%}
 <!-- end latest macro -->
 
 {% macro displayNewsArticles(article_list) %} {% for article in article_list %}

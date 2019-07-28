@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" />
 {% endblock styles%} {% block content %}
 <div class="container">
-  <h2>{{ title | upper}}</h2>
+  <h2>{{ title | upper }}</h2>
   <div class="row major-article">
     {{ macro.displayMajorArticle(majorArticle) }}
   </div>
@@ -21,7 +21,16 @@
       <h2>latest</h2>
     </header>
     <hr />
+    {{ macro.displayLatestArticles(latestArticle) }}
   </div>
+
+  <div class="row">
+        <header class="header">
+          <h2>latest</h2>
+        </header>
+        <hr />
+        
+      </div>
 
   <!-- <div class="row">
     {{ macro.displayNewsArticles(articles) }}
