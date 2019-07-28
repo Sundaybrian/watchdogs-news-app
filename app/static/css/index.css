@@ -15,7 +15,7 @@
 }
 
 .text-primary {
-  color: #214cb8;
+  color: turquoise;
 }
 
 .text-title {
@@ -27,18 +27,18 @@
 .text-title a {
   font-size: 0.7em;
   font-weight: 200;
-  color: #1e1e1e !important;
+  color: #fb3 !important;
 }
 
 .text-title a:hover {
   text-decoration: underline;
-  color: #214cb8 !important;
-  text-decoration-color: #214cb8 !important;
+  color: turquoise !important;
+  text-decoration-color: turquoise !important;
 }
 
 .lead {
   font-weight: normal !important;
-  color: #666 !important;
+  color: #fff !important;
   line-height: 1.2em;
   margin: 0 0 1.25em 0;
   padding: 0 0.2em 0 0;
@@ -97,14 +97,14 @@ section.sources h2 {
   text-transform: uppercase;
 }
 
-/* major article*/
+/*============ major article===============*/
 
 header.header h2 {
   font-size: 1.3em;
   padding-left: 2px;
   padding-top: 9px;
   text-transform: capitalize;
-  color: #1e1e1e;
+  color: #fff;
 }
 
 .major-img img.img-responsive {
@@ -113,6 +113,14 @@ header.header h2 {
 
 .major-content {
   padding: 5px;
+  color: #fff;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #row-griddy {

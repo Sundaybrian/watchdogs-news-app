@@ -25,12 +25,15 @@
       />
     </div>
     <div class="col-sm-12 col-md-4" id="major-content">
-      <h5 class="text-muted">{{ major.author }}</h5>
+      <div class="heading">
+          <h5 class="text-primary">{{ major.author }}</h5>
+          <span class="text-muted">last Updated:{{ major.publishedAt }}</span>
+      </div>
+    
       <h2 class="text-title">
         <a href="{{ major.url }}">{{ major.title }}</a>
       </h2>
       <p class="lead">{{ major.content | truncate(200) }}</p>
-      <span class="text-muted">last Updated:{{ major.publishedAt }}</span>
     </div>
   </div>
 </div>
@@ -48,12 +51,14 @@
     />
   </div>
   <div class="major2-content">
-    <h5 class="text-primary">{{ article.author }}</h5>
+    <div class="heading">
+      <h5 class="text-primary">{{ article.author }}</h5>
+      <span class="text-muted">Last Updated:{{ article.publishedAt }}</span>
+    </div>
     <h2 class="text-title">
       <a href="{{ article.url }}">{{ article.title }}</a>
     </h2>
     <!-- <p class="lead">{{ article.content}}</p> -->
-    <span class="text-muted">Last Updated:{{ article.publishedAt }}</span>
   </div>
 </div>
 {% endfor%} {% endmacro%}
@@ -71,12 +76,15 @@
       />
     </div>
     <div class="col-sm-8 article-info">
-      <h5 class="text-primary">{{ article.author }}</h5>
+      <div class="heading">
+        <h5 class="text-primary">{{ article.author }}</h5>
+        <span class="text-muted">{{ article.publishedAt }}</span>
+
+      </div>
       <h2 class="text-title">
         <a href="{{ article.url }}">{{ article.title }}</a>
       </h2>
-      <p class="lead">{{ article.content | truncate(150)}}</p>
-      <span class="text-muted">{{ article.publishedAt }}</span>
+      <p class="lead">{{ article.content}}</p>
     </div>
   </div>
 </div>
@@ -94,12 +102,15 @@
       />
     </div>
     <div class="col-sm-8 article-info">
-      <h5 class="text-muted">{{ article.author }}</h5>
+      <div class="heading">
+        <h5 class="text-muted">{{ article.author }}</h5>
+        <span class="text-muted">{{ article.publishedAt }}</span>
+        <span>     
+      </div>
       <h2>{{ article.title }}</h2>
       <p class="lead">{{ article.description }}</p>
-      <span class="text-muted">{{ article.publishedAt }}</span>
-      <span><a href="{{ article.url }}">Read More...</a></span>
     </div>
+ <a href="{{ article.url }}">Read More...</a></span>
   </div>
 </div>
 
