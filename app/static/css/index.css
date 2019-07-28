@@ -8,6 +8,7 @@
 body {
   background-color: #121313;
   font-family: "Sriracha", cursive;
+  color: #ffffff;
 }
 
 /* ============navigation============ */
@@ -16,8 +17,20 @@ nav.navbar-inverse {
   color: #ffff;
 }
 
-nav .navbar-brand:hover {
+nav.navbar a.navbar-brand:hover {
   color: #fb3;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #fb3;
+  color: #000 !important;
+  font-weight: 400;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover,
+a:focus {
+  background-color: #fb3;
+  color: #000 !important;
 }
 
 /* ============index page============ */
